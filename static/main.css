@@ -1,0 +1,136 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	min-height: 100vh;
+	background: #00beac;
+}
+.container{
+	height: 350px;
+	width: 350px;
+	background: #4ed4c6;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 0 10px gray;
+	transition: transform 3s;
+}
+.container div{
+	height: 50%;
+	width: 200px;
+	clip-path: polygon(100% 0,50% 100%, 0 0);
+	transform: translateX(-50%);
+	transform-origin: bottom;
+	position: absolute;
+	left: 21%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	font-family: monospace;
+	font-weight: 1000;
+	color:#008276; 
+	 writing-mode: vertical-rl;
+}
+.container .option-one{
+	background: #baf4ee;
+	left: 50%;
+}
+.container .option-two{
+	background: #4ed4c6;
+	transform: rotate(60deg);
+}
+.container .option-three{
+	background: #baf4ee;
+	transform: rotate(120deg);
+}
+.container .option-four{
+	background: #4ed4c6;
+	transform: rotate(180deg);
+}
+.container .option-five{
+	background: #baf4ee;
+	transform: rotate(240deg);
+}
+.container .option-six{
+	background: #4ed4c6;
+	transform: rotate(300deg);
+}
+.mid{
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	position: absolute;
+	background: #008276;
+}
+#spin{
+	height: 60px;
+	width: 200px;
+	background: #4ed4c6;
+	position: absolute;
+	margin-top: 600px;
+	font-size: 30px;
+	color: white;
+	font-weight: 1000;
+	letter-spacing: 4px;
+	border: 1px solid white;
+	cursor: pointer;
+	box-shadow: 0 5px 10px gray;
+	transition: 0.2s all;
+}
+#spin:hover{
+	box-shadow: none;
+}
+.stoper{
+	height: 50px;
+	width: 40px;
+	background: #ffd600;
+	position: absolute;
+	clip-path: polygon(100% 0,50% 100%, 0 0);
+	margin-top: -350px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
